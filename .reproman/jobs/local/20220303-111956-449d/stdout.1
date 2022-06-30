@@ -1,1 +1,1501 @@
-../../../../.git/annex/objects/3F/FQ/MD5E-s98141--35468e1aa25e488fe8af884bbd6128b9.1/MD5E-s98141--35468e1aa25e488fe8af884bbd6128b9.1
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-mriqc--21.0.0rc2.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002843-mriqc participant --participant-label 'dmp1095' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds002843_sub-dmp1095' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds002843 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002843-mriqc
+220305-04:22:50,761 cli IMPORTANT:
+	 
+    Running MRIQC version 21.0.0rc2:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002843-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002843-mriqc.
+      * Analysis levels: ['participant'].
+
+220305-04:22:51,440 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:03,317 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:24,777 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220305-04:23:24,808 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220305-04:23:25,455 nipype.workflow INFO:
+	 Running in parallel.
+220305-04:23:25,463 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 60 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-04:23:25,719 nipype.workflow INFO:
+	 [Job 0] Cached (mriqc_wf.anatMRIQC.conform).
+220305-04:23:25,837 nipype.workflow INFO:
+	 [Job 2] Cached (mriqc_wf.anatMRIQC.conform).
+220305-04:23:25,903 nipype.workflow INFO:
+	 [Job 4] Cached (mriqc_wf.anatMRIQC.conform).
+220305-04:23:26,329 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-itc_run-1_bold.nii.gz/metadata".
+220305-04:23:26,361 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:23:27,950 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:27,958 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:28,749 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:28,750 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:28,765 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:28,768 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:29,669 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:29,741 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:29,768 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:29,871 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:30,547 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:30,555 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:30,609 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:30,611 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,545 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,568 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,568 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,575 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,613 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:31,819 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,415 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,417 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,454 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,462 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,469 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,500 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,527 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,602 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,637 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,641 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,704 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,722 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,855 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:32,969 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,15 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,78 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,98 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,253 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,262 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,273 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,277 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,280 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,281 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,290 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,304 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,305 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,310 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,315 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,316 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,316 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,321 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,321 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,324 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,336 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,336 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:23:33,339 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-04:26:08,811 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:26:08,811 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:26:09,55 nipype.workflow INFO:
+	 [Job 7] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:26:09,77 nipype.workflow INFO:
+	 [Job 8] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:26:09,80 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-itc_run-2_bold.nii.gz/metadata".
+220305-04:26:09,109 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:28:13,352 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:28:13,352 nipype.workflow INFO:
+	 [Job 9] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:28:13,585 nipype.workflow INFO:
+	 [Job 10] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:28:13,602 nipype.workflow INFO:
+	 [Job 11] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:28:13,616 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-itc_run-3_bold.nii.gz/metadata".
+220305-04:28:13,726 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:30:17,34 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:30:17,34 nipype.workflow INFO:
+	 [Job 12] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:30:17,252 nipype.workflow INFO:
+	 [Job 13] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:30:17,260 nipype.workflow INFO:
+	 [Job 14] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:30:17,274 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-itc_run-4_bold.nii.gz/metadata".
+220305-04:30:17,376 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:32:20,653 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:32:20,653 nipype.workflow INFO:
+	 [Job 15] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:32:20,917 nipype.workflow INFO:
+	 [Job 16] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:32:20,924 nipype.workflow INFO:
+	 [Job 17] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:32:20,942 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-rest_bold.nii.gz/metadata".
+220305-04:32:20,967 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:34:24,149 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:34:24,149 nipype.workflow INFO:
+	 [Job 18] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:34:24,365 nipype.workflow INFO:
+	 [Job 19] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:34:24,567 nipype.workflow INFO:
+	 [Job 20] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:34:24,570 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-1_bold.nii.gz/metadata".
+220305-04:34:24,590 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:36:27,615 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:36:27,615 nipype.workflow INFO:
+	 [Job 21] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:36:27,839 nipype.workflow INFO:
+	 [Job 22] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:36:27,866 nipype.workflow INFO:
+	 [Job 23] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:36:27,888 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-2_bold.nii.gz/metadata".
+220305-04:36:27,911 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:38:30,813 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:38:30,813 nipype.workflow INFO:
+	 [Job 24] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:38:31,18 nipype.workflow INFO:
+	 [Job 25] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:38:31,21 nipype.workflow INFO:
+	 [Job 26] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:38:31,37 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-3_bold.nii.gz/metadata".
+220305-04:38:31,57 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:40:34,195 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:40:34,195 nipype.workflow INFO:
+	 [Job 27] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:40:34,444 nipype.workflow INFO:
+	 [Job 28] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:40:34,454 nipype.workflow INFO:
+	 [Job 29] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:40:34,529 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/metadata".
+220305-04:40:34,761 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:42:37,938 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:42:37,938 nipype.workflow INFO:
+	 [Job 30] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:42:38,156 nipype.workflow INFO:
+	 [Job 31] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:42:38,168 nipype.workflow INFO:
+	 [Job 32] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:42:38,184 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-itc_run-1_bold.nii.gz/metadata".
+220305-04:42:38,213 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:44:41,681 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:44:41,681 nipype.workflow INFO:
+	 [Job 33] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:44:41,948 nipype.workflow INFO:
+	 [Job 34] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:44:41,969 nipype.workflow INFO:
+	 [Job 35] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:44:41,972 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-itc_run-2_bold.nii.gz/metadata".
+220305-04:44:41,987 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:46:45,779 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:46:45,779 nipype.workflow INFO:
+	 [Job 36] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:46:46,14 nipype.workflow INFO:
+	 [Job 37] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:46:46,16 nipype.workflow INFO:
+	 [Job 38] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:46:46,53 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-itc_run-3_bold.nii.gz/metadata".
+220305-04:46:46,93 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:48:49,845 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:48:49,846 nipype.workflow INFO:
+	 [Job 39] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:48:50,74 nipype.workflow INFO:
+	 [Job 40] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:48:50,77 nipype.workflow INFO:
+	 [Job 41] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:48:50,80 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-itc_run-4_bold.nii.gz/metadata".
+220305-04:48:50,100 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:50:53,600 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:50:53,600 nipype.workflow INFO:
+	 [Job 42] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:50:53,895 nipype.workflow INFO:
+	 [Job 43] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:50:54,121 nipype.workflow INFO:
+	 [Job 44] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:50:54,138 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-rest_bold.nii.gz/metadata".
+220305-04:50:54,147 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:52:57,350 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:52:57,350 nipype.workflow INFO:
+	 [Job 45] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:52:57,648 nipype.workflow INFO:
+	 [Job 46] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:52:57,673 nipype.workflow INFO:
+	 [Job 47] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:52:57,676 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-risk_run-1_bold.nii.gz/metadata".
+220305-04:52:57,705 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:55:01,106 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:55:01,106 nipype.workflow INFO:
+	 [Job 48] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:55:01,399 nipype.workflow INFO:
+	 [Job 49] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:55:01,412 nipype.workflow INFO:
+	 [Job 50] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:55:01,452 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-risk_run-2_bold.nii.gz/metadata".
+220305-04:55:01,470 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:57:04,916 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:57:04,916 nipype.workflow INFO:
+	 [Job 51] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:57:05,208 nipype.workflow INFO:
+	 [Job 52] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:57:05,219 nipype.workflow INFO:
+	 [Job 53] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:57:05,222 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-risk_run-3_bold.nii.gz/metadata".
+220305-04:57:05,245 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-04:59:09,521 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-04:59:09,521 nipype.workflow INFO:
+	 [Job 54] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-04:59:09,825 nipype.workflow INFO:
+	 [Job 55] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-04:59:09,828 nipype.workflow INFO:
+	 [Job 56] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-04:59:09,847 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan2..func..sub-dmp1095_ses-scan2_task-risk_run-4_bold.nii.gz/metadata".
+220305-04:59:09,877 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-05:01:20,739 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-05:01:20,740 nipype.workflow INFO:
+	 [Job 57] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-05:01:21,323 nipype.workflow INFO:
+	 [Job 58] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-05:01:21,351 nipype.workflow INFO:
+	 [Job 59] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-05:01:21,354 nipype.workflow INFO:
+	 [Job 1] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220305-05:01:21,355 nipype.workflow INFO:
+	 [Job 3] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220305-05:01:21,356 nipype.workflow INFO:
+	 [Job 5] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220305-05:01:21,358 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 27 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-05:01:21,569 nipype.workflow INFO:
+	 [Job 60] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4).
+220305-05:01:21,572 nipype.workflow INFO:
+	 [Job 61] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask).
+220305-05:01:21,576 nipype.workflow INFO:
+	 [Job 62] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:21,623 nipype.workflow INFO:
+	 [Job 63] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4).
+220305-05:01:21,650 nipype.workflow INFO:
+	 [Job 64] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask).
+220305-05:01:21,654 nipype.workflow INFO:
+	 [Job 65] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:21,687 nipype.workflow INFO:
+	 [Job 66] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4).
+220305-05:01:21,691 nipype.workflow INFO:
+	 [Job 67] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask).
+220305-05:01:21,695 nipype.workflow INFO:
+	 [Job 68] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:21,916 nipype.workflow INFO:
+	 [Job 69] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:21,929 nipype.workflow INFO:
+	 [Job 70] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,175 nipype.workflow INFO:
+	 [Job 71] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,187 nipype.workflow INFO:
+	 [Job 72] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,404 nipype.workflow INFO:
+	 [Job 73] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,439 nipype.workflow INFO:
+	 [Job 74] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,456 nipype.workflow INFO:
+	 [Job 75] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,499 nipype.workflow INFO:
+	 [Job 76] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,518 nipype.workflow INFO:
+	 [Job 77] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,555 nipype.workflow INFO:
+	 [Job 78] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,587 nipype.workflow INFO:
+	 [Job 79] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,619 nipype.workflow INFO:
+	 [Job 80] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,633 nipype.workflow INFO:
+	 [Job 81] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,662 nipype.workflow INFO:
+	 [Job 82] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,679 nipype.workflow INFO:
+	 [Job 83] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,694 nipype.workflow INFO:
+	 [Job 84] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,932 nipype.workflow INFO:
+	 [Job 85] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:22,951 nipype.workflow INFO:
+	 [Job 86] Cached (mriqc_wf.funcMRIQC.sanitize).
+220305-05:01:23,357 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 42 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-05:01:23,517 nipype.workflow INFO:
+	 [Job 91] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip).
+220305-05:01:23,533 nipype.workflow INFO:
+	 [Job 92] Cached (mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet).
+220305-05:01:23,562 nipype.workflow INFO:
+	 [Job 93] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,566 nipype.workflow INFO:
+	 [Job 94] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,591 nipype.workflow INFO:
+	 [Job 95] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,594 nipype.workflow INFO:
+	 [Job 96] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,642 nipype.workflow INFO:
+	 [Job 97] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,645 nipype.workflow INFO:
+	 [Job 98] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,663 nipype.workflow INFO:
+	 [Job 99] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,687 nipype.workflow INFO:
+	 [Job 100] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,721 nipype.workflow INFO:
+	 [Job 101] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,724 nipype.workflow INFO:
+	 [Job 102] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,759 nipype.workflow INFO:
+	 [Job 103] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,762 nipype.workflow INFO:
+	 [Job 104] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,777 nipype.workflow INFO:
+	 [Job 105] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,781 nipype.workflow INFO:
+	 [Job 106] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,805 nipype.workflow INFO:
+	 [Job 107] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,808 nipype.workflow INFO:
+	 [Job 108] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:23,981 nipype.workflow INFO:
+	 [Job 109] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:23,984 nipype.workflow INFO:
+	 [Job 110] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,45 nipype.workflow INFO:
+	 [Job 111] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,49 nipype.workflow INFO:
+	 [Job 112] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,66 nipype.workflow INFO:
+	 [Job 113] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,69 nipype.workflow INFO:
+	 [Job 114] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,101 nipype.workflow INFO:
+	 [Job 115] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,105 nipype.workflow INFO:
+	 [Job 116] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,145 nipype.workflow INFO:
+	 [Job 117] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,157 nipype.workflow INFO:
+	 [Job 118] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,180 nipype.workflow INFO:
+	 [Job 119] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,184 nipype.workflow INFO:
+	 [Job 120] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,195 nipype.workflow INFO:
+	 [Job 121] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,199 nipype.workflow INFO:
+	 [Job 122] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,214 nipype.workflow INFO:
+	 [Job 123] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,218 nipype.workflow INFO:
+	 [Job 124] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,236 nipype.workflow INFO:
+	 [Job 125] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,256 nipype.workflow INFO:
+	 [Job 126] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:24,295 nipype.workflow INFO:
+	 [Job 127] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-05:01:24,298 nipype.workflow INFO:
+	 [Job 128] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-05:01:25,359 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 92 jobs ready. Free memory (GB): 29.20/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:25,499 nipype.workflow INFO:
+	 [Job 139] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,522 nipype.workflow INFO:
+	 [Job 144] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,544 nipype.workflow INFO:
+	 [Job 149] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,560 nipype.workflow INFO:
+	 [Job 154] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,590 nipype.workflow INFO:
+	 [Job 159] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,697 nipype.workflow INFO:
+	 [Job 164] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,731 nipype.workflow INFO:
+	 [Job 169] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,776 nipype.workflow INFO:
+	 [Job 174] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:25,978 nipype.workflow INFO:
+	 [Job 175] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:25,981 nipype.workflow INFO:
+	 [Job 176] Cached (mriqc_wf.funcMRIQC.mean).
+220305-05:01:25,996 nipype.workflow INFO:
+	 [Job 177] Cached (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:26,0 nipype.workflow INFO:
+	 [Job 178] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:26,14 nipype.workflow INFO:
+	 [Job 179] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:26,414 nipype.workflow INFO:
+	 [Job 184] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,358 nipype.workflow INFO:
+	 [Job 135] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,359 nipype.workflow INFO:
+	 [Job 137] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,360 nipype.workflow INFO:
+	 [Job 140] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,361 nipype.workflow INFO:
+	 [Job 142] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,362 nipype.workflow INFO:
+	 [Job 145] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,362 nipype.workflow INFO:
+	 [Job 147] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,363 nipype.workflow INFO:
+	 [Job 150] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,364 nipype.workflow INFO:
+	 [Job 152] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,365 nipype.workflow INFO:
+	 [Job 155] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,366 nipype.workflow INFO:
+	 [Job 157] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,366 nipype.workflow INFO:
+	 [Job 160] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,367 nipype.workflow INFO:
+	 [Job 162] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,368 nipype.workflow INFO:
+	 [Job 165] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,369 nipype.workflow INFO:
+	 [Job 167] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,369 nipype.workflow INFO:
+	 [Job 170] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,370 nipype.workflow INFO:
+	 [Job 172] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,371 nipype.workflow INFO:
+	 [Job 180] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:27,372 nipype.workflow INFO:
+	 [Job 182] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:27,374 nipype.workflow INFO:
+	 [MultiProc] Running 24 tasks, and 54 jobs ready. Free memory (GB): 27.17/30.00, Free processors: 32/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.sstrip_orig_vol
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:27,541 nipype.workflow INFO:
+	 [Job 189] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,564 nipype.workflow INFO:
+	 [Job 194] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,604 nipype.workflow INFO:
+	 [Job 199] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,623 nipype.workflow INFO:
+	 [Job 204] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,640 nipype.workflow INFO:
+	 [Job 209] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:27,672 nipype.workflow INFO:
+	 [Job 214] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:29,360 nipype.workflow INFO:
+	 [Job 133] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.sstrip_orig_vol).
+220305-05:01:29,361 nipype.workflow INFO:
+	 [Job 136] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,362 nipype.workflow INFO:
+	 [Job 138] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,363 nipype.workflow INFO:
+	 [Job 141] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,364 nipype.workflow INFO:
+	 [Job 143] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,364 nipype.workflow INFO:
+	 [Job 146] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,365 nipype.workflow INFO:
+	 [Job 148] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,366 nipype.workflow INFO:
+	 [Job 151] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,367 nipype.workflow INFO:
+	 [Job 153] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,367 nipype.workflow INFO:
+	 [Job 156] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,368 nipype.workflow INFO:
+	 [Job 158] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,369 nipype.workflow INFO:
+	 [Job 161] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,370 nipype.workflow INFO:
+	 [Job 163] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,371 nipype.workflow INFO:
+	 [Job 166] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,371 nipype.workflow INFO:
+	 [Job 168] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,372 nipype.workflow INFO:
+	 [Job 171] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,373 nipype.workflow INFO:
+	 [Job 173] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,374 nipype.workflow INFO:
+	 [Job 181] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,374 nipype.workflow INFO:
+	 [Job 183] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,375 nipype.workflow INFO:
+	 [Job 185] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,376 nipype.workflow INFO:
+	 [Job 186] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,377 nipype.workflow INFO:
+	 [Job 187] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,378 nipype.workflow INFO:
+	 [Job 188] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,378 nipype.workflow INFO:
+	 [Job 190] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,379 nipype.workflow INFO:
+	 [Job 191] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,380 nipype.workflow INFO:
+	 [Job 192] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,381 nipype.workflow INFO:
+	 [Job 193] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,381 nipype.workflow INFO:
+	 [Job 195] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,382 nipype.workflow INFO:
+	 [Job 196] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,383 nipype.workflow INFO:
+	 [Job 197] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,384 nipype.workflow INFO:
+	 [Job 198] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,384 nipype.workflow INFO:
+	 [Job 200] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,385 nipype.workflow INFO:
+	 [Job 201] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,386 nipype.workflow INFO:
+	 [Job 202] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,387 nipype.workflow INFO:
+	 [Job 205] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,387 nipype.workflow INFO:
+	 [Job 206] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,388 nipype.workflow INFO:
+	 [Job 207] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,389 nipype.workflow INFO:
+	 [Job 208] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,390 nipype.workflow INFO:
+	 [Job 210] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,391 nipype.workflow INFO:
+	 [Job 211] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,391 nipype.workflow INFO:
+	 [Job 212] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:29,392 nipype.workflow INFO:
+	 [Job 213] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:29,393 nipype.workflow INFO:
+	 [Job 215] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:29,394 nipype.workflow INFO:
+	 [Job 216] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:29,396 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 94 jobs ready. Free memory (GB): 28.88/30.00, Free processors: 50/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:29,686 nipype.workflow INFO:
+	 [Job 219] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:29,704 nipype.workflow INFO:
+	 [Job 224] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-05:01:31,361 nipype.workflow INFO:
+	 [Job 203] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:31,362 nipype.workflow INFO:
+	 [Job 217] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:31,363 nipype.workflow INFO:
+	 [Job 218] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:31,364 nipype.workflow INFO:
+	 [Job 220] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-05:01:31,365 nipype.workflow INFO:
+	 [Job 221] Completed (mriqc_wf.funcMRIQC.mean).
+220305-05:01:31,366 nipype.workflow INFO:
+	 [Job 222] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-05:01:31,366 nipype.workflow INFO:
+	 [Job 223] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-05:01:31,367 nipype.workflow INFO:
+	 [Job 229] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.binarize).
+220305-05:01:31,368 nipype.workflow INFO:
+	 [Job 231] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,369 nipype.workflow INFO:
+	 [Job 236] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,370 nipype.workflow INFO:
+	 [Job 241] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,370 nipype.workflow INFO:
+	 [Job 246] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,371 nipype.workflow INFO:
+	 [Job 251] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,372 nipype.workflow INFO:
+	 [Job 256] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,373 nipype.workflow INFO:
+	 [Job 261] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,374 nipype.workflow INFO:
+	 [Job 266] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,376 nipype.workflow INFO:
+	 [MultiProc] Running 38 tasks, and 110 jobs ready. Free memory (GB): 17.60/30.00, Free processors: 18/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:31,536 nipype.workflow INFO:
+	 [Job 271] Cached (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:31,552 nipype.workflow INFO:
+	 [Job 272] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:31,557 nipype.workflow INFO:
+	 [Job 273] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:31,561 nipype.workflow INFO:
+	 [Job 274] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:31,599 nipype.workflow INFO:
+	 [Job 275] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:33,362 nipype.workflow INFO:
+	 [Job 134] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask).
+220305-05:01:33,363 nipype.workflow INFO:
+	 [Job 232] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,364 nipype.workflow INFO:
+	 [Job 237] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,365 nipype.workflow INFO:
+	 [Job 242] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,366 nipype.workflow INFO:
+	 [Job 247] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,367 nipype.workflow INFO:
+	 [Job 252] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,367 nipype.workflow INFO:
+	 [Job 257] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,368 nipype.workflow INFO:
+	 [Job 262] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,369 nipype.workflow INFO:
+	 [Job 267] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:33,370 nipype.workflow INFO:
+	 [Job 276] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:33,371 nipype.workflow INFO:
+	 [Job 281] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:33,371 nipype.workflow INFO:
+	 [Job 286] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:33,374 nipype.workflow INFO:
+	 [MultiProc] Running 39 tasks, and 129 jobs ready. Free memory (GB): 17.40/30.00, Free processors: 17/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:35,367 nipype.workflow INFO:
+	 [Job 277] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:35,368 nipype.workflow INFO:
+	 [Job 282] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:35,369 nipype.workflow INFO:
+	 [Job 287] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:35,370 nipype.workflow INFO:
+	 [Job 291] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:35,371 nipype.workflow INFO:
+	 [Job 296] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:35,372 nipype.workflow INFO:
+	 [Job 301] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:35,374 nipype.workflow INFO:
+	 [MultiProc] Running 50 tasks, and 136 jobs ready. Free memory (GB): 15.20/30.00, Free processors: 6/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:37,365 nipype.workflow INFO:
+	 [Job 253] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:37,366 nipype.workflow INFO:
+	 [Job 263] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:37,367 nipype.workflow INFO:
+	 [Job 269] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:37,368 nipype.workflow INFO:
+	 [Job 292] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:37,369 nipype.workflow INFO:
+	 [Job 297] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:37,369 nipype.workflow INFO:
+	 [Job 302] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:37,370 nipype.workflow INFO:
+	 [Job 306] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:37,371 nipype.workflow INFO:
+	 [Job 311] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:37,374 nipype.workflow INFO:
+	 [MultiProc] Running 48 tasks, and 147 jobs ready. Free memory (GB): 15.60/30.00, Free processors: 8/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:39,366 nipype.workflow INFO:
+	 [Job 233] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,367 nipype.workflow INFO:
+	 [Job 234] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,368 nipype.workflow INFO:
+	 [Job 235] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,369 nipype.workflow INFO:
+	 [Job 238] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,369 nipype.workflow INFO:
+	 [Job 239] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,370 nipype.workflow INFO:
+	 [Job 240] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,371 nipype.workflow INFO:
+	 [Job 243] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,372 nipype.workflow INFO:
+	 [Job 244] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,372 nipype.workflow INFO:
+	 [Job 245] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,373 nipype.workflow INFO:
+	 [Job 248] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,374 nipype.workflow INFO:
+	 [Job 249] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,375 nipype.workflow INFO:
+	 [Job 250] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,376 nipype.workflow INFO:
+	 [Job 254] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,376 nipype.workflow INFO:
+	 [Job 255] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,377 nipype.workflow INFO:
+	 [Job 258] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,378 nipype.workflow INFO:
+	 [Job 259] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,379 nipype.workflow INFO:
+	 [Job 260] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,379 nipype.workflow INFO:
+	 [Job 264] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,380 nipype.workflow INFO:
+	 [Job 265] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,381 nipype.workflow INFO:
+	 [Job 268] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,382 nipype.workflow INFO:
+	 [Job 270] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,383 nipype.workflow INFO:
+	 [Job 279] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:39,383 nipype.workflow INFO:
+	 [Job 280] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:39,384 nipype.workflow INFO:
+	 [Job 283] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:39,385 nipype.workflow INFO:
+	 [Job 307] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:39,386 nipype.workflow INFO:
+	 [Job 316] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-05:01:39,388 nipype.workflow INFO:
+	 [MultiProc] Running 30 tasks, and 147 jobs ready. Free memory (GB): 19.20/30.00, Free processors: 26/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:41,367 nipype.workflow INFO:
+	 [Job 278] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:41,368 nipype.workflow INFO:
+	 [Job 284] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:41,369 nipype.workflow INFO:
+	 [Job 285] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:41,370 nipype.workflow INFO:
+	 [Job 288] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:41,371 nipype.workflow INFO:
+	 [Job 293] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:41,372 nipype.workflow INFO:
+	 [Job 299] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:41,372 nipype.workflow INFO:
+	 [Job 312] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:41,373 nipype.workflow INFO:
+	 [Job 317] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-05:01:41,374 nipype.workflow INFO:
+	 [Job 341] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:41,375 nipype.workflow INFO:
+	 [Job 342] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:41,376 nipype.workflow INFO:
+	 [Job 349] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:41,377 nipype.workflow INFO:
+	 [Job 350] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:41,379 nipype.workflow INFO:
+	 [MultiProc] Running 37 tasks, and 130 jobs ready. Free memory (GB): 7.68/30.00, Free processors: 12/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:43,372 nipype.workflow INFO:
+	 [Job 289] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:43,374 nipype.workflow INFO:
+	 [Job 290] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:43,375 nipype.workflow INFO:
+	 [Job 294] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:43,376 nipype.workflow INFO:
+	 [Job 295] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:43,377 nipype.workflow INFO:
+	 [Job 298] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:43,377 nipype.workflow INFO:
+	 [Job 300] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:43,378 nipype.workflow INFO:
+	 [Job 303] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:43,379 nipype.workflow INFO:
+	 [Job 304] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:43,380 nipype.workflow INFO:
+	 [Job 305] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:43,381 nipype.workflow INFO:
+	 [Job 308] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:43,381 nipype.workflow INFO:
+	 [Job 309] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:43,382 nipype.workflow INFO:
+	 [Job 334] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.smoothness).
+220305-05:01:43,383 nipype.workflow INFO:
+	 [Job 343] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:43,384 nipype.workflow INFO:
+	 [Job 344] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:43,385 nipype.workflow INFO:
+	 [Job 351] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:43,386 nipype.workflow INFO:
+	 [Job 352] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:43,386 nipype.workflow INFO:
+	 [Job 357] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:43,387 nipype.workflow INFO:
+	 [Job 358] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:43,388 nipype.workflow INFO:
+	 [Job 359] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:43,391 nipype.workflow INFO:
+	 [MultiProc] Running 23 tasks, and 125 jobs ready. Free memory (GB): 7.44/30.00, Free processors: 19/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:45,372 nipype.workflow INFO:
+	 [Job 310] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:45,373 nipype.workflow INFO:
+	 [Job 313] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:45,374 nipype.workflow INFO:
+	 [Job 314] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:45,374 nipype.workflow INFO:
+	 [Job 315] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:45,375 nipype.workflow INFO:
+	 [Job 318] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-05:01:45,376 nipype.workflow INFO:
+	 [Job 319] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-05:01:45,377 nipype.workflow INFO:
+	 [Job 336] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:45,378 nipype.workflow INFO:
+	 [Job 345] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:45,379 nipype.workflow INFO:
+	 [Job 360] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:45,379 nipype.workflow INFO:
+	 [Job 365] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:45,382 nipype.workflow INFO:
+	 [MultiProc] Running 18 tasks, and 120 jobs ready. Free memory (GB): 2.92/30.00, Free processors: 10/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:47,370 nipype.workflow INFO:
+	 [Job 320] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-05:01:47,371 nipype.workflow INFO:
+	 [Job 335] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:47,372 nipype.workflow INFO:
+	 [Job 353] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:47,373 nipype.workflow INFO:
+	 [Job 366] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:47,374 nipype.workflow INFO:
+	 [Job 373] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:47,374 nipype.workflow INFO:
+	 [Job 374] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:47,377 nipype.workflow INFO:
+	 [MultiProc] Running 22 tasks, and 110 jobs ready. Free memory (GB): 2.44/30.00, Free processors: 6/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:49,371 nipype.workflow INFO:
+	 [Job 340] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:49,372 nipype.workflow INFO:
+	 [Job 348] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:49,373 nipype.workflow INFO:
+	 [Job 356] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:49,374 nipype.workflow INFO:
+	 [Job 361] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:49,375 nipype.workflow INFO:
+	 [Job 367] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:49,376 nipype.workflow INFO:
+	 [Job 368] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:49,377 nipype.workflow INFO:
+	 [Job 375] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:49,377 nipype.workflow INFO:
+	 [Job 376] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:49,378 nipype.workflow INFO:
+	 [Job 381] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:49,379 nipype.workflow INFO:
+	 [Job 382] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:49,380 nipype.workflow INFO:
+	 [Job 383] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:49,382 nipype.workflow INFO:
+	 [MultiProc] Running 17 tasks, and 107 jobs ready. Free memory (GB): 3.04/30.00, Free processors: 11/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:51,372 nipype.workflow INFO:
+	 [Job 369] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:51,373 nipype.workflow INFO:
+	 [Job 384] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:51,376 nipype.workflow INFO:
+	 [MultiProc] Running 16 tasks, and 106 jobs ready. Free memory (GB): 0.44/30.00, Free processors: 5/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:53,374 nipype.workflow INFO:
+	 [Job 364] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:53,375 nipype.workflow INFO:
+	 [Job 377] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:53,376 nipype.workflow INFO:
+	 [Job 385] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:53,377 nipype.workflow INFO:
+	 [Job 389] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:53,378 nipype.workflow INFO:
+	 [Job 390] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:53,380 nipype.workflow INFO:
+	 [MultiProc] Running 14 tasks, and 104 jobs ready. Free memory (GB): 0.84/30.00, Free processors: 7/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:55,375 nipype.workflow INFO:
+	 [Job 372] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:55,376 nipype.workflow INFO:
+	 [Job 391] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:55,377 nipype.workflow INFO:
+	 [Job 392] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:55,378 nipype.workflow INFO:
+	 [Job 397] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:55,380 nipype.workflow INFO:
+	 [MultiProc] Running 15 tasks, and 100 jobs ready. Free memory (GB): 0.64/30.00, Free processors: 6/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:57,376 nipype.workflow INFO:
+	 [Job 380] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:57,377 nipype.workflow INFO:
+	 [Job 398] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-05:01:57,378 nipype.workflow INFO:
+	 [Job 399] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:57,380 nipype.workflow INFO:
+	 [MultiProc] Running 16 tasks, and 97 jobs ready. Free memory (GB): 0.36/30.00, Free processors: 5/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:57,543 nipype.workflow INFO:
+	 [Job 404] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:01:57,565 nipype.workflow INFO:
+	 [Job 405] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-05:01:59,377 nipype.workflow INFO:
+	 [Job 393] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:01:59,378 nipype.workflow INFO:
+	 [Job 400] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:59,380 nipype.workflow INFO:
+	 [MultiProc] Running 14 tasks, and 96 jobs ready. Free memory (GB): 0.76/30.00, Free processors: 7/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+220305-05:01:59,555 nipype.workflow INFO:
+	 [Job 407] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-05:01:59,560 nipype.workflow INFO:
+	 [Job 408] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-05:01:59,580 nipype.workflow INFO:
+	 [Job 409] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:02:00,40 nipype.workflow WARNING:
+	 Storing result file without outputs
+220305-05:02:00,43 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.funcMRIQC.ComputeIQMs.outliers" (/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/outliers)
+220305-05:02:01,379 nipype.workflow INFO:
+	 [Job 388] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-05:02:01,380 nipype.workflow INFO:
+	 [Job 401] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-05:02:01,381 nipype.workflow ERROR:
+	 Node outliers.a08 failed to run on host c211-029.frontera.tacc.utexas.edu.
+220305-05:02:01,382 nipype.workflow ERROR:
+	 Saving crash info to /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002843-mriqc/logs/crash-20220305-050201-jbwexler-outliers.a08-4985f12b-8d6d-440d-8fc3-49c3c1c56134.txt
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/afni/preprocess.py", line 1840, in _run_interface
+    runtime = super(OutlierCount, self)._run_interface(
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 822, in _run_interface
+    self.raise_exception(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 749, in raise_exception
+    raise RuntimeError(
+RuntimeError: Command:
+3dToutcount -fraction -mask /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz -qthr 0.00100 /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRI_HMC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/motion_correct/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg.nii.gz
+Standard output:
+
+Standard error:
+++ 3dToutcount: AFNI version=AFNI_21.2.06 (Sep  1 2021) [64-bit]
+[7m*+ WARNING:[0m   If you are performing spatial transformations on an oblique dset,
+  such as /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz,
+  or viewing/combining it with volumes of differing obliquity,
+  you should consider running: 
+     3dWarp -deoblique 
+  on this and  other oblique datasets in the same session.
+ See 3dWarp -help for details.
+++ Oblique dataset:/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz is 27.800009 degrees from plumb.
+++ 53546 voxels in the mask
+++ Oblique dataset:/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRI_HMC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/motion_correct/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg.nii.gz is 27.800009 degrees from plumb.
+** Can't use dataset with < 5 time points per voxel!
+Return code: 1
+

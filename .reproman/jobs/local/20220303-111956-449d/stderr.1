@@ -1,1 +1,47 @@
-../../../../.git/annex/objects/GP/QQ/MD5E-s4466--22dd7f2f51918a9bf71547c0345e6c2e.1/MD5E-s4466--22dd7f2f51918a9bf71547c0345e6c2e.1
+Traceback (most recent call last):
+  File "/opt/conda/bin/mriqc", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.8/site-packages/mriqc/cli/run.py", line 95, in main
+    mriqc_wf.run(**config.nipype.get_plugin())
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 164, in run
+    self._clean_queue(jobid, graph, result=result)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 227, in _clean_queue
+    raise RuntimeError("".join(result["traceback"]))
+RuntimeError: Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/afni/preprocess.py", line 1840, in _run_interface
+    runtime = super(OutlierCount, self)._run_interface(
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 822, in _run_interface
+    self.raise_exception(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 749, in raise_exception
+    raise RuntimeError(
+RuntimeError: Command:
+3dToutcount -fraction -mask /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz -qthr 0.00100 /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRI_HMC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/motion_correct/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg.nii.gz
+Standard output:
+
+Standard error:
+++ 3dToutcount: AFNI version=AFNI_21.2.06 (Sep  1 2021) [64-bit]
+[7m*+ WARNING:[0m   If you are performing spatial transformations on an oblique dset,
+  such as /scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz,
+  or viewing/combining it with volumes of differing obliquity,
+  you should consider running: 
+     3dWarp -deoblique 
+  on this and  other oblique datasets in the same session.
+ See 3dWarp -help for details.
+++ Oblique dataset:/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRIBrainMask/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/afni_msk/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg_tstat_mask.nii.gz is 27.800009 degrees from plumb.
+++ 53546 voxels in the mask
+++ Oblique dataset:/scratch1/03201/jbwexler/work_dir/mriqc/ds002843_sub-dmp1095/mriqc_wf/funcMRIQC/fMRI_HMC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002843-mriqc..sourcedata..raw..sub-dmp1095..ses-scan1..func..sub-dmp1095_ses-scan1_task-risk_run-4_bold.nii.gz/motion_correct/sub-dmp1095_ses-scan1_task-risk_run-4_bold_valid_volreg.nii.gz is 27.800009 degrees from plumb.
+** Can't use dataset with < 5 time points per voxel!
+Return code: 1
+
